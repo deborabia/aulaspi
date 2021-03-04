@@ -16,6 +16,7 @@ public class Evento {
 	private String data;
 	private String horario;
 	
+	
 	public Long getId() {
 		return id;
 	}
@@ -55,5 +56,12 @@ public class Evento {
 	public void setHorario(String horario) {
 		this.horario = horario;
 	}
+	
+	@Override
+	public String toString() {
+		return "Evento [id=" + id + ", nome=" + nome + ", local=" + local + ", data=" + data + ", horario=" + horario
+				+ "]";
+	}
+
 
 }
